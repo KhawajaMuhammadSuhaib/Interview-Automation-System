@@ -1,0 +1,56 @@
+{
+  "name": "interview-automation-system",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.6.4",
+    "@mdi/js": "^5.9.55",
+    "@mdi/react": "^1.5.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.16.13",
+    "axios": "^0.22.0",
+    "filepond": "^4.30.3",
+    "filepond-plugin-file-encode": "^2.1.10",
+    "filepond-plugin-image-exif-orientation": "^1.0.11",
+    "filepond-plugin-image-preview": "^4.6.10",
+    "jsonwebtoken": "^8.5.1",
+    "react": "^17.0.2",
+    "react-circular-progressbar": "^2.0.4",
+    "react-dom": "^17.0.2",
+    "react-dropdown-now": "^6.0.1",
+    "react-filepond": "^7.1.1",
+    "react-icons": "^4.2.0",
+    "react-modal": "^3.14.3",
+    "react-router-dom": "^5.2.1",
+    "react-scripts": "4.0.3",
+    "reactjs-popup": "^2.0.5",
+    "validator": "^13.6.0",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

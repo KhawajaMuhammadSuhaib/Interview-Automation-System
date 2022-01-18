@@ -1,0 +1,2305 @@
+@import './colors.css';
+body{
+    background: rgba(0,0,0,0.01);
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "poppins", sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.col1 {
+    background: #bf3333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col2 {
+    background: rgba(0,0,0,0.03);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+}
+.heading {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1;
+    margin: 5px 0px 15px 0px;
+}
+  
+.subHeading {
+    font-size: 20px;
+    margin: 5px 0px 15px 0px;
+}
+input:focus {
+    outline: none;
+}
+.register-form {
+    width: 450px;
+    text-align: center;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+.inputWrap {
+    height:45px;
+    background: #fff;
+    margin: 5px 0px 15px 0px;
+    box-shadow: 0.5px 0.5px 7px -5px #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 20px;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid;
+}
+.input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.showError{
+    color: var(--error);
+    /* border: 1px solid ; */
+}
+.passMatchError{
+    margin-bottom: 10px;
+}
+.noError{
+    display: none;
+}
+.errorText{
+    margin: 0%;
+    color: var(--error);
+    font-size: small;
+}
+.showMatchMeassage{
+    color: var(--success);
+}
+.passMatchNoError{
+    margin-bottom: 10px;
+}
+.noError{
+    display: none;
+}
+.NoErrorText{
+    margin: 0%;
+    color: var(--success);
+    font-size: small;
+}
+.passwordGuide{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 300;
+    /* opacity: 0.7; */
+}
+.passwordGuide ul{
+    width: fit-content;
+    margin: auto 0px;
+}
+.submitButton {
+    height:50px;
+    margin: 5px 0px 15px 0px;
+    box-shadow: 0.5px 0.5px 7px -5px #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    width: 100%;
+<<<<<<< HEAD
+    background-color: #af0000;
+=======
+    background-color:var(--primary);
+>>>>>>> 923ea65 (Complete Project)
+    color: white;
+    justify-content: center;
+    margin-top: 10px;
+    border: none;
+}
+<<<<<<< HEAD
+=======
+.submitButton:hover{
+    background-color:var(--dark1);
+}
+>>>>>>> 923ea65 (Complete Project)
+.disable{
+    pointer-events: none;
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+.signInLink a {
+    text-decoration: none;
+}
+.RadioButtonWrap{
+    height:45px;
+    margin: 5px 0px 15px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    overflow: hidden;
+    width: 100%;
+}
+.sidebarContainer{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.sidebar{
+    width: 250px;
+    height: 98.5vh;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.507);
+    background-color: var(--typo);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+    min-width: fit-content;
+    min-height: fit-content;
+    overflow: hidden;
+    position: fixed;
+    border-radius: 10px;
+}
+.itemWrap{
+    /* background-color: gold; */
+    width: 100%;
+    height: fit-content;
+    align-items: flex-start;
+
+}
+.item{
+    /* width: fit-content; */
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    /* background-color: green; */
+    margin: 5px 3px;
+    padding: 1px 5px 1px 8px;
+    border-radius: 5px;
+
+}
+.itemIcon{
+    color: var(--light1);
+    font-size: 20px;
+
+}
+.itemTitle{
+    color: var(--background);
+    font-size: 15px;
+    margin: 3px 0px 0px 15px;
+}
+.item:hover .itemTitle {
+    color: white;
+    font-weight: 600;
+  }
+  
+.item:hover .itemIcon {
+    color:white;
+  }
+.item:hover{
+    background-color:var(--light1);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor:pointer;
+}
+.onClick{
+    background-color:var(--light1);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor:pointer;
+}
+.onClick .itemIcon{
+    color: var(--background);
+}
+.onClick .itemTitle{
+    color: var(--background);
+    font-weight: 600;
+}
+
+
+.NavBar{
+    position: fixed;
+    width: 81.5vw;
+    display: grid;
+    grid-template-columns: auto  auto;
+    padding: 20px;
+    margin:0px 0px 5px 263px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.507);
+    background-color:var(--typo);
+    border-radius: 10px;
+    color: var(--background);
+
+}
+.NavBar p{
+    color: var(--background);
+    font-size: 20px;
+    width: fit-content;
+    margin: auto 0px;
+}
+
+.NavBarIconWrap{
+    text-align: end;
+}
+.NavBarIcon{
+    margin: 0px 10px;
+    color: var(--background);
+}
+.NavBarIcon:hover{
+    color: var(--primary);
+    cursor: pointer;
+}
+.SearchBar{
+    /* background-color: green; */
+    height:35px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 20px;
+    margin: auto;
+    overflow: hidden;
+    width: 50%;
+    border-bottom: 1px solid lightgrey;
+    align-self: flex-end;
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    /* background-color: #af0000; */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    background-color: var(--background);
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    font-size: 15px;
+    overflow: hidden;
+  }
+  .dropdown-content p {
+    padding: 3px;
+    border-radius: 3px;
+    margin: 5px;
+    color: var(--typo);
+    font-size: small;
+  }
+  .dropdown-content p:hover {
+      background-color: var(--background);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.ProfilePage{
+    display: grid;
+    /* background-color: rebeccapurple; */
+    grid-template-columns:75% 20%;
+    grid-column-gap: 15px; 
+    margin-top: 72px;
+    margin-left: 275px;
+}
+
+.EditProfile{
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 10px;
+    /* background-color: #776d6d; */
+    /* background: rgba(0,0,0,0.03); */
+    /* box-shadow: 0px 0px 7px -4px #000000; */
+    /* width: 100%; */
+
+}
+.inputContainer{
+    margin: 10px;
+    width: 100%;
+    
+}
+.FeildsWrap{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.inputlabel{
+    font-size: 17px; 
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-weight: 500;
+    /* text-decoration: underline #af0000; */
+}
+.inputfeild{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 15px;
+    background: #fff;
+    margin: 5px 0px 15px 0px;
+    box-shadow: 0.5px 0.5px 7px -5px #000000;
+    border-radius: 5px;
+    height: 35px;
+    padding: 8px;
+    /* outline: 1px solid var(--primary) ; */
+}
+.inputfeild:focus{
+    outline: 1px solid var(--typo);
+
+}
+.textarea{
+    width: 98%;
+    border: none;
+    font-size: 15px;
+    background: #fff;
+    margin: 5px 0px 15px 0px;
+    box-shadow: 0.5px 0.5px 7px -5px #000000;
+    border-radius: 5px;
+    padding: 8px;
+}
+.textarea:focus{
+    outline: 1px solid var(--typo) ;
+}
+.ButtonWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.ProfileButton{
+    height:40px;
+    margin: 5px 8px 15px 0px;
+    box-shadow: 0.5px 0.5px 7px -5px #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    width: 20%;
+    background-color:var(--primary);
+    color: var(--background);
+    justify-content: center;
+    margin-top: 20px;
+}
+.ProfileNavigateMenu{
+    margin: 10px;
+    overflow: hidden;
+    /* width: fit-content; */
+    /* background-color: #cfcece; */
+    padding: 50px 10px 10px 10px ;
+    height: fit-content;
+    position: fixed;
+   
+}
+.ProfileNavigateButton{
+    margin: 0%;
+    padding: 5px 0px 5px 16px;
+    font-size: 12px;
+    /* opacity: 0.7; */
+    color: gray;
+    opacity: 0.85;
+    border-left: 1px solid lightgray;
+    /* border: 1px solid; */
+    /* background-color: #cfcece; */
+}
+.ProfileNavigateButton:hover{
+    color: var(--primary);
+    cursor: pointer;
+    font-weight:  bold;
+    /* font-size: 13px;
+    color: var(--typo);
+    border-left: 5px solid var(--primary); */
+}
+.active{
+    cursor: pointer;
+    font-weight:  bold;
+    font-size: 13px;
+    color: var(--typo);
+    border-left: 5px solid var(--primary);
+}
+.hide{
+    display: none;
+}
+.profile{
+    /* margin: 10px; */
+    margin: 10px 0px 20px 10px;
+    overflow: hidden;
+    padding: 10px;
+    background: rgba(0,0,0,0.03);
+    box-shadow: 0.6px 0.6px 7px -4px #000000;
+    border-radius: 5px;
+    height: fit-content;
+    color: var(--typo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 24%;
+    /* width: fit-content; */
+}
+.picture{
+    width: fit-content;
+    overflow: hidden;
+    border-radius: 100px;
+    margin: 20px;
+
+}
+.profileName{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0%;
+}
+.title{
+    font-size: 15px;
+    font-weight: 300;
+}
+.modal{
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);  
+}
+
+.modal-content{
+    width: 800px;
+    background-color: #fff;
+    position: relative;
+    padding: 15px;
+    box-shadow: 0.6px 0.6px 7px -4px #000000;
+
+}
+ .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+  .ModalButtonWrap{
+      width: 100px;
+      margin: auto;
+  }
+  
+  .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    padding: 5px;
+  }
+  .content {
+    width: 100%;
+    padding: 10px 5px;
+    text-align: center;
+  }
+
+  .ProfileCardContainer{
+      margin: 10px;
+      padding: 10px;
+  }
+
+.ProfileHeader{
+    display: flex;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.226); */
+    /* background-color:var(--light1);   */
+}
+.ProfilePicContainer{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ProfilePic{
+    margin: 30px ;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.226);
+    cursor: pointer;
+}
+.ProfileInfoContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 30px 15px 0px;
+}
+.ProfileInfoContainer p{
+    margin: 0%;
+}
+.ProfileName{
+    color: var(--typo);
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0%;
+    /* background-color: #af0000; */
+    display: flex;
+    align-items: center;
+
+
+}
+.ProfileTitle{
+    color:var(--primary);
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0%;
+    cursor: pointer;
+}
+.ProfileAbout{
+    color: var(--typo);
+    /* margin-top: 8px; */
+    text-align: justify;
+    font-size: 13px;
+    cursor: pointer;
+}
+.ApplicantInfoContainer{
+    padding:  10px 0px;
+    border-radius: 10px;
+    margin: 15px 0px;
+    cursor: pointer;
+
+}
+.InfoAndIconContainer{
+    /* background-color: steelblue; */
+    display: flex;
+    justify-content: space-between;
+}
+.ApplicantInfoIconContainer{
+    /* background-color: sienna; */
+    display: flex;
+    align-items: center;
+    /* padding: 15px; */
+}
+.ApplicantInfoHeader{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0%;
+    border-bottom: 3px solid var(--primary);
+}
+.ApplicantInfoIcon{
+    margin: 10px;
+    cursor: pointer;
+    color: var(--primary);
+}
+.ApplicantInfoIcon:hover{
+    color: var(--typo);
+
+}
+.OrganizationTitle{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0%;
+    color: var(--light1);
+}
+<<<<<<< HEAD
+=======
+.WorkRole{
+    margin: 0px;
+    font-size: 14px;
+    color: var(--typo);
+}
+>>>>>>> 923ea65 (Complete Project)
+.PositionTitle{
+    margin: 13px 0px 0px 0px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.ApplicantAchivments{
+    margin: 0px;
+    font-size: 12px;
+    font-style: italic;
+    color: var(--typo);
+}
+.SkillsWrap{
+<<<<<<< HEAD
+    list-style-type: none;
+=======
+>>>>>>> 923ea65 (Complete Project)
+    display: flex;
+    /* background-color: aqua; */
+    margin:13px 0px 5px 0px;
+}
+.Skills{
+    background-color: var(--primary);
+    width: fit-content;
+    padding: 8px 15px 8px 15px;
+    border-radius: 15px;
+    margin: 5px;
+    color: var(--background);
+    position: relative;
+<<<<<<< HEAD
+=======
+    text-transform: uppercase;
+>>>>>>> 923ea65 (Complete Project)
+}
+.SkillIconContainer{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 0px 2px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+    color: gray;
+    margin: auto;
+}
+.SkillIconContainer:hover{
+    background-color: gray;
+    color: #fff;
+}
+
+
+.PasswordRecoveryContainer{
+    margin: 10px ;
+    padding: 10px;
+    /* background-color: violet; */
+    /* text-align: center;   */
+}
+.RecoveryText{
+    margin-top: 15px;
+    text-align: justify;
+}
+.RecoverEmailWrap{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 20px;
+    /* flex-direction: column; */
+
+}
+.RecoverEmailWrap p{
+    margin: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.RecoverEmailWrap input{
+    height:35px;
+    background: #fff;
+    margin: 10px;
+    box-shadow: 0.5px 0.5px 7px -5px #000000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 20px;
+    overflow: hidden;
+    width: 50%;
+    border: none;
+}
+.RecoverEmailWrap div{
+    height:35px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    width: 15%;
+    background-color:var(--primary);
+    color: var(--background);
+    justify-content: center;
+    margin: 0px 10px;
+}
+.PasswordAndGuideContainer{
+    /* background-color: teal; */
+    display: flex;
+    justify-content: space-around;
+}
+.ChangePasswordContainer{
+    /* margin: 10px auto; */
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    /* background-color: slateblue; */
+
+}
+.ChangePasswordWrap{
+    height:35px;
+    background: #fff;
+    margin: 10px 0px 25px 0px;
+    box-shadow: 0.5px 0.5px 7px -5px #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 20px;
+    overflow: hidden;
+    width: 100%;
+    border: none;
+}
+.ChangePasswordInput{
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 16px;
+}
+.ChangePasswordButtonWrap{
+    /* background-color: #a0a ; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ChangePasswordButton{
+    height:35px;
+    margin: 10px 0px 15px 0px;
+    /* box-shadow: 0.5px  0.5px 7px -5px #000000; */
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    width: 40%;
+    background-color:var(--light1);
+    color: var(--background);
+    justify-content: center;
+    /* border: 1px solid; */
+}
+.ChangePasswordButton:hover{
+    background-color:var(--primary);
+}
+
+.GuideContainer{
+    /* background-color: tomato; */
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.PasswordGuide{
+    /* background-color:darksalmon; */
+    padding-bottom: 25px;
+}
+.PasswordGuideWrap{
+    /* background-color: darkorange; */
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.PasswordGuideIcon{
+    color: gray;
+    opacity: 0.8;
+}
+.PasswordGuideText{
+    margin: 0%;
+    margin-left: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    color: gray;
+    /* background-color: aqua; */
+}
+.success{
+    color: var(--success);
+}
+.JobContainer{
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 10px;
+    /* background-color: aquamarine; */
+}
+.JobSearchBarContainer{
+    /* border: 1px solid; */
+    margin:10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px -2px gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--light1);
+}
+.SearchBoxWrap{
+    /* border: 1px solid; */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    background: #fff;
+<<<<<<< HEAD
+    width: 35%;
+=======
+    width: 75%;
+>>>>>>> 923ea65 (Complete Project)
+    height: 35px;
+    padding: 8px;
+}
+.SearchInput{
+    border: none;
+    width: 90%;
+    padding: 5px;
+    font-size: 14px;
+}
+.SearchIcon{
+    color: gray;
+}
+.SearchButton{
+    border: 1px solid;
+    padding: 5px;
+    width: 10%;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 13px;
+    color: var(--background);
+}
+.SearchButton:hover{
+    color: var(--typo);
+    background-color: var(--background);
+}
+.SearchDropdownWrap{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.SearchDropdown{
+    color: #af0000;
+    /* background-color: lightblue; */
+    border-radius: 10px;
+
+    /* width: 50%; */
+}
+.JobWrap{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+    padding:10px;
+    cursor: pointer;
+    /* width: 70%; */
+    border-radius: 5px;
+    margin: 10px 0px;
+    border: 1px solid lightgray;
+    /* background-color: rgb(156, 121, 156); */
+}
+.JobWrap:hover{
+    box-shadow: 0px 0px 7px -5px black;
+     border-radius: 5px;
+}
+.JobWrap:hover .JobPosition{
+    text-decoration: underline var(--primary);
+    cursor: pointer;
+
+}
+.JobPicWrap{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.JobPic{
+    border-radius: 100px;
+    /* border: 1px solid lightgray;  */
+    width: 130px;
+    height: 130px;
+    box-shadow: 0px 0px 7px -4px black;
+}
+.JobInfoWrap{
+    /* background-color: saddlebrown; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.JobPosition{
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0%;
+    /* background-color: #af0000; */
+}
+.JobPosition:hover{
+    text-decoration: underline var(--primary);
+    cursor: pointer;
+}
+.JobCompany{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--typo);
+    margin: 0%;
+
+}
+.JobLocation{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0%;
+    color: gray;
+}
+.PublishTime{
+    font-size: 13px;
+    font-weight: 600;
+    margin: 10px 0px 0px 0px;
+    color: var(--light1);
+}
+.JobSaveButtonWrap{
+    /* background-color: purple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+}
+.JobSaveButton{
+    color: gray;
+    cursor: pointer;
+}
+.JobSaveButton:hover{
+    color: black;
+    background-color: var(--background);
+    box-shadow: 0px 0px 7px -5px black;
+}
+.ModalBackground{
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.3); 
+    overflow-anchor: 79;
+}
+.JobCard{
+    width: 45%;
+    background-color: white;
+    /* overflow-y: scroll; */
+    /* height: fit-content; */
+    padding: 20px 30px;
+    /* box-shadow: 0px 0px 7px -5px; */
+}
+.JobInfoContainer{
+    margin:5px 0px 0px 0px;
+    padding-bottom: 10px;
+    /* border-bottom: 1px solid gray; */
+    display: flex;
+}
+.JobInfoPicWrap{
+    width: 20%;
+    margin-right:5% ;
+    padding-top: 10px;
+    display: flex;
+    justify-content: start;
+    /* box-shadow: 0px 0px 7px -5px rgb(3, 1, 1); */
+    /* align-items: flex-start;  */
+}
+.JobInfoPic{
+    /* border-radius: 100px; */
+    box-shadow: 0px 0px 7px -5px black;
+
+}
+.JobInfo{
+    width: 70%;
+    /* margin-left: 8px; */
+    /* background-color: #af0000; */
+}
+.JobTitle{
+    color: var(--primary);
+    font-size: 27px;
+    font-weight: 600;
+    margin: 0%;
+}
+
+.JobShortDetailsWrap{
+<<<<<<< HEAD
+=======
+    margin-top: 15px;
+>>>>>>> 923ea65 (Complete Project)
+    display: flex;
+}
+.JobShortDetailIcon{
+    color: gray;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.JobShortDetails{
+<<<<<<< HEAD
+    font-size: 16px;
+    font-weight: 500;
+=======
+    font-size: 14px;
+    font-weight: 600;
+>>>>>>> 923ea65 (Complete Project)
+    color: var(--typo);
+    padding: 1px;
+    margin: 0%;
+    /* background-color: #af0000; */
+
+}
+.ActionButtonWrap{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px 0px 0px;
+}
+.ApplyButton{
+    height:35px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    width: 25%;
+    background-color:var(--light1);
+    color: white;
+    font-weight: 500;
+    justify-content: center;
+    margin: 0px 10px 0px 0px;
+    /* box-shadow: 0px 0px 7px -5px black; */
+
+}
+.ApplyButton:hover{
+    background-color:var(--primary);
+}
+.SaveButton{
+    height:35px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    width: 25%;
+    background-color:#ffffff;
+    color: var(--primary);
+    justify-content: center;
+    margin: 0px 10px 0px 0px;
+    border: 1px solid var(--primary);
+}
+.SaveButton:hover{
+    border: 2px solid var(--primary);
+    font-weight: 600;
+}
+.JobDetailHeader{
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary);
+    margin: 0%;
+    /* width: fit-content; */
+}
+.ApplicantButton{
+    height:35px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    width: fit-content;
+    justify-content: center;
+    margin: 0px 10px 0px 0px;
+    box-shadow: 0px 0px 7px -5px black;
+    background-color: var(--light1);
+    color: white;
+}
+.ApplicantButtonText{
+    margin: 0%;
+    padding-left: 3px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.ApplicantButton:hover{
+    background-color: var(--primary);
+    color: white;
+}
+.JobDetailText{
+    font-size: 14px;
+    color: var(--typo);
+    margin-top: 10px;
+    text-align: justify;
+    list-style-type: none;
+}
+
+.JobApplyModal{
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);    
+}
+.ApplyCardContainer{
+    background-color:#fff;
+    width: 40%;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    padding: 15px;
+    box-shadow: 0.6px 0.6px 7px -4px #000000;
+}
+.ApplyCardHeader{
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom:2px solid var(--primary) ;
+}
+.ApplyJobInputContainer{
+    margin-bottom: 15px;
+}
+.SubHeading{
+    margin: 3px 0px;
+    font-size: 16px;
+    color: var(--typo);
+    font-weight: 500;
+}
+.JobCardInput{
+    border:none;
+    box-shadow: 0px 0px 7px -4px black;
+    height: 30px;
+<<<<<<< HEAD
+    padding: 8px;
+    font-size: 14px;
+=======
+    padding: 20px;
+    font-size: 15px;
+>>>>>>> 923ea65 (Complete Project)
+    width: 100%;
+    border-radius: 5px;
+}
+.SubHeading2{
+    color: gray;
+    margin-top: 0%;
+}
+.ApplyButtonContainer{
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+<<<<<<< HEAD
+    margin: 20px 0px 10px 0px;
+=======
+    margin: 50px 0px 10px 0px;
+>>>>>>> 923ea65 (Complete Project)
+    justify-content: space-evenly;
+    border-top: 1px solid lightgray;
+}
+.applied{
+<<<<<<< HEAD
+    color: var(--success);
+=======
+    color: rgb(25, 143, 25);
+>>>>>>> 923ea65 (Complete Project)
+    font-size: 16px;
+    font-weight: 600;
+}
+.CompanyJobPortalContainer{
+    margin:82px 10px 10px 285px;
+    /* background-color: tomato; */
+    width: 79vw;
+    padding: 10px;
+}
+.CompanyJobPortalHeaderContainer{
+    /* background-color: #bf3333; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 3px solid var(--primary);
+   
+}
+.CompanyJobPortalHeader{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0%;
+}
+
+.CreateAndSearchContainer{
+    display: flex;
+    /* background-color: #af0000; */
+}
+.CreateButton{
+    /* border: 2px solid var(--primary); */
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    text-align: center;
+    margin: 0px 10px 7px 0px;
+    color: white;
+    background-color: var(--primary);
+    font-size: 17px ;
+    cursor: pointer;
+}
+.CreateButton:hover{
+    font-size: 16px;
+}
+.CompanyJobPortalSearchBar{
+    border: 2px solid var(--primary);
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+}
+.CompanyJobPortalSearchInput{
+    border: none;
+    width: 250px;
+    height: 30px;
+    padding: 8px;
+    font-size: 15px ;
+    color: var(--primary);
+}
+.CompanyJobPortalSearchIcon{
+    color:var(--primary);
+    cursor: pointer;
+}
+.CompanyJobPortalBodayContainer{
+    margin-top: 10px;
+    /* background-color: #af0000; */
+}
+.JobTableHeaderRow{
+<<<<<<< HEAD
+    margin:10px 0px;
+=======
+    margin:8px 0px;
+>>>>>>> 923ea65 (Complete Project)
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px -2px gray;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    background-color: var(--light1);
+    height: 50px;
+<<<<<<< HEAD
+    
+=======
+>>>>>>> 923ea65 (Complete Project)
+}
+.spacing{
+    justify-content: center;
+
+}
+.JobTableHeader{
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    width: 20%;
+    margin: 1px;
+    border-right: 1px solid white;
+    text-align: center;
+    overflow: hidden;
+    /* background-color: antiquewhite; */
+
+}
+.JobTableDataRow{
+<<<<<<< HEAD
+    margin:10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px -4px black;
+    display: flex;
+    flex-direction: row;
+=======
+    margin:8px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px -5px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+>>>>>>> 923ea65 (Complete Project)
+    align-items: center;
+    height: 50px;
+}
+
+.JobTableDataRow:hover{
+    cursor: pointer;
+}
+
+.JobTableColumn{
+    font-size: 15px;
+    font-weight: 400;
+    width: 20%;
+    margin: 1px;
+    border-right: 1px solid black;
+<<<<<<< HEAD
+    text-align: center;
+    overflow: hidden;
+=======
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.JobTableColumn p{
+    margin: auto;
+>>>>>>> 923ea65 (Complete Project)
+}
+.Title{
+    color: var(--primary);
+    font-weight: 450;
+}
+.Title:hover{
+    text-decoration: underline;
+}
+.Active{
+    font-weight: 450;
+    color: green;
+}
+.Disable{
+    font-weight: 450;
+    color: red;
+}
+.Options{
+    color: gray;
+    display: flex;
+    justify-content: center;
+    /* background-color: #bf3333; */
+    
+}
+.DropDowncontent{
+    display: none;
+    background-color: white;
+    box-shadow: 0px 0px 7px -5px;
+    width: fit-content;
+    margin: auto;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    border-radius: 5px ;
+    margin-top: 25px;
+   
+}
+.DropDowncontent div{
+    display: flex;
+    /* font-size: 14px; */
+    /* opacity: 0.8; */
+}
+.DropDowncontent div:hover{
+    color: #af0000;
+}
+.Options:hover .DropDowncontent{
+    display: block;
+}
+.OptionsIcon{
+    margin:0px 5px
+}
+.CreateJobContainer{
+    background-color: white;
+    width: 45%;
+    padding: 15px;
+}
+.JobHeader{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0%;
+    border-bottom: 3px solid var(--primary);
+}
+.JobInputContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    /* background-color: #af0000; */
+}
+.JobInput{
+    padding: 8px 10px 8px 10px;
+    width: 45%;
+    border: 1px solid rgba(128, 128, 128, 0.477);
+}
+.rdn{
+    width: 45%;
+}
+.JobDetails{
+    margin-top: 10px;
+}
+.JobInputLabel{
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0%;
+}
+.JobTextArea{
+    border: 1px solid rgba(128, 128, 128, 0.477);
+    width: 100%;
+    padding:8px 10px 8px 10px;
+    outline: none;
+}
+.CreatJobButtonWrap{
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+.ApplicantsScreen{
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+.ApplicantScreenModal{
+    background-color: white;
+    width: 70%;
+    /* overflow-y: scroll; */
+    padding:15px;
+    height: 600px;
+    position: relative;
+}
+.UnderLineHeader{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0%;
+    border-bottom: 3px solid var(--primary);
+}
+.ApplicantTableHeaderRow{
+    margin:10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px -2px gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light1);
+    height: 40px;
+}
+.ApplicantTableHeader{
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    width: 20%;
+    margin: 1px;
+    border-right: 1px solid white;
+    text-align: center;
+    overflow: hidden;
+}
+.ApplicantTableDataRow{
+    margin:10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px -4px black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+}
+.ApplicantTableColumn{
+    font-size: 15px;
+    font-weight: 400;
+    width: 20%;
+    margin: 1px;
+    border-right: 1px solid black;
+    text-align: center;
+    overflow: hidden;
+}
+.Hemail{
+    width:30%
+}
+.email{
+    /* font-size: 12px; */
+    width: 30%;
+}
+.index{
+    width: 10%;
+}
+.Membership{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-top: 10px;
+    /* background-color: #af0000; */
+    justify-content: center;
+    padding: 5px 0px 20px 0px;
+}
+.MembershipTextContainer{
+    width: 50%;
+    /* background-color: aqua; */
+}
+.MembershipText{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0%;
+}
+.MembershipPlan{
+    margin: 0%;
+    /* background-color: #af0000; */
+}
+.ManageMembership{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    /* padding-top: 8px; */
+    align-items: center;
+    /* background-color: tan; */
+}
+.noDisplay{
+    display: none;
+}
+.ImageContainer{
+    /* background-color: #af0000; */
+    margin: 5px;
+    padding: 3px;
+}
+.EmptyDiv{
+    width: 100%;
+    text-align: center;
+    /* background-color: #0000000a; */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-content{
+    margin:82px 10px 10px 285px;
+    /* background-color: tomato; */
+    width: 79vw;
+    padding: 10px;
+}
+.SelectionContainer{
+    margin: 10px 0px;
+    width: 50%;
+}
+.ChoiceContainer{
+    /* background-color: #bf3333; */
+    padding:10px 10px 10px 30px;
+}
+.MainHeading{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 14px;
+}
+.Heading{
+    margin: 0%;
+    font-size: 13px;
+    font-weight: 400;
+    color: gray
+
+}
+.inputFeild{
+    padding: 4px;
+    border: none;
+    box-shadow: 0px 0px 7px -4px black;
+    margin-top: 7px;
+    width: 30%;
+    font-size: 13px;
+
+}
+.Checkbox{
+    font-size: 15px;
+    font-weight: 500;
+}
+.progress{
+    width: 120px;
+    height: 120px;
+    color: #af0000;
+}
+.bar{
+    color: #af0000;
+}
+.mainWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.leftWrap{
+    width: 40%;
+}
+.interviewStartWrap{
+    display: flex;
+    /* background-color: #af0000; */
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom:5px ;
+    padding: 5px;
+}
+.interviewHeader{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0%;
+}
+.interviewButton{
+    background-color: var(--light1);
+    width: 30%;
+    padding: 8px;
+}
+.rightWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    align-items: center;
+    /* background-color: #af0000; */
+}
+.interviewHeader2{
+    margin: 0%;
+    margin-bottom: 3px;
+    color: gray;
+    font-size: 15px;
+}
+.Container2{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Container21{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    /* border: 1px solid; */
+}
+.Container22{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    /* border: 1px solid; */
+
+}
+.Container211{
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 9px -4px black;
+    height: 40vh;
+    overflow-y: scroll;
+    border-radius: 5px;
+}
+.Container221{
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 9px -4px black;
+    height: 50vh;
+    overflow-y: scroll;
+    border-radius: 5px;
+}
+.Icon{
+ color: var(--error);   
+}
+.Icon:hover{
+    color: var(--dark1);
+}
+.CountWrap{
+    display: flex;
+    width: 100%;
+    /* background-color: #af0000; */
+    justify-content: space-evenly;
+}
+.CompanyCountWrap{
+    background-color:var(--light1);
+    margin: 0px 15px 15px 15px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 20px;
+}
+.companyTitle{
+    font-size: 21px;
+    font-weight: 600;
+    color: white;
+    margin: 0%;
+}
+.companyCount{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin: 0%;
+}
+.flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.flowButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding:20px;
+<<<<<<< HEAD
+=======
+}
+.SkillsContainer{
+    display: flex;
+}
+.Center{
+    text-align: center;
+    height: 50vh;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+}
+.progressSpinner{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 10000; */
+    /* background-color: ; */
+}
+.RecordedScreenContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #202124;
+    height: 100vh;
+}
+.CameraContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #000000; */
+    height: 100vh;
+    width: 66%;
+}
+.Camera{
+    /* background-color: #bf3333; */
+    position: relative;
+    width: 90%;
+    height: 100%;
+}
+.AltText{
+    color: rgb(190, 189, 189);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.CameraButtonContainer{
+    position:absolute;
+    bottom: 110px;
+    display: flex;
+    flex-direction: row;
+}
+.CameraButtons{
+    background-color: rgba(255, 254, 254, 0.4);
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.CameraButtons:hover{
+    cursor: pointer;
+}
+.CamOnIcon{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+.CamOffIcon{
+    font-size: 15px;
+    color: rgb(7, 7, 7);
+}
+.RecordOnIcon{
+    font-size: 15px;
+    color: rgb(253, 0, 0);
+}
+.RecordOffIcon{
+    /* font-size: 15px; */
+    color: rgb(255, 255, 255);
+}
+
+.QuestionContainer{
+    background-color: #303134;
+    height: 90%;
+    width: 25%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px transparent;
+}
+
+.Question h2{
+    font-weight: 500;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    color: #e33434;
+}
+.Question p{
+    font-weight: 500;
+    color: white;
+    margin: 10px 0px;
+}
+.RecoringSubmitButton{
+    background-color: #e33434;
+    color:var(--background);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    /* font-weight: 600; */
+    /* text-transform: uppercase; */
+}
+.timer{
+    position: absolute;
+    /* font-size: px; */
+    color: black;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 0px;
+    text-align: center;
+    /* left:540px */
+}
+.RecordQuestionFormContainer{
+    box-sizing: border-box;
+    overflow: hidden;
+    margin:30px;
+    /* background-color: tomato; */
+}
+.DeadlineContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: tomato; */
+    /* width: 91%; */
+}
+.DeadlineWrap{
+    width: 45%;
+}
+.interviewHeading{
+    margin-bottom: 0%;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform:capitalize;
+    color:var(--primary);
+}
+.interviewSubheading{
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 4px;
+    
+}
+.DeadlineInput{
+    border-radius: 3px;
+    margin-top: 0px;
+    border:1px solid gray;
+    width:80%;
+    padding: 3px;
+}
+.DeadlineInputWrap{
+    border:1px solid gray;
+    border-radius: 3px;
+    margin-top: 0px;
+    border:1px solid gray;
+    width:80%;
+    padding: 3px;
+    display: flex;
+    background-color: white;
+    /* justify-content: space-between; */
+}
+.timeInput{
+    border: none;
+    width: 85%;
+}
+.QuestionWrap{
+    width: 100%;
+    margin-top: 10px;
+}
+.AddQuestionWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: tomato; */
+    width: 91%;
+
+}
+.QuestionInput{
+    border-radius: 3px;
+    margin-top: 0px;
+    border:1px solid gray;
+    width:80%;
+    padding: 3px;
+}
+.QuestionOption{
+    border-radius: 3px;
+    margin-top: 0px;
+    border:1px solid gray;
+    width:20%;
+    padding: 3px;
+    margin-top: 5px;
+}
+.optionContainer{
+    display: flex;
+    flex-direction:column ;
+}
+.QuestionButton{
+    background-color: var(--light1);
+    color:white;
+    padding: 3px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.QuestionButton:hover{
+    background-color: var(--primary);
+}
+.SetQuestions{
+    width: 91%;
+    overflow: hidden;
+}
+.Questionstatement{
+    margin-bottom: 0%;
+    color: gray;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.QuestionButtonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    /* background-color: tomato; */
+    width: 91%;
+    margin-top: 190px;
+}
+.CreateInterviewButton{
+    background-color: var(--light1);
+    color: white;
+    padding: 3px 10px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.CreateInterviewButton:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+}
+.CreateInterviewRandomButton{
+    background-color: var(--light1);
+    color: white;
+    padding: 3px 10px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 3px;
+    /* margin-top: 10px; */
+    border: 1px solid var(--light1);
+}
+.CreateInterviewRandomButton:hover{
+    background-color: var(--primary);
+    cursor: pointer;
+}
+.CancelButton{
+    border: 1px solid var(--light1);
+    color: var(--light1);
+    padding: 5px 10px;
+    width: 20%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CancelButton:hover{
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+.fileUploader{
+    width: 91%;
+}
+.LiveInterviewDataContainer{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.randomQuestionContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+.randominput{
+    border-radius: 3px;
+    margin-top: 0px;
+    border:1px solid gray;
+    /* width:80%; */
+    margin-top: 10px;
+    padding: 3px;
+}
+.loaderContainer{
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.QuestionnareScreenContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: #000000; */
+}
+.QuestionFormContainer{
+    /* border:1px solid gray; */
+    height: 100vh;
+    width: 50vw;
+    /* border-radius: 8px; */
+    box-shadow: 0.5px 0.5px 7px -5px #000000;
+
+
+}
+.QuestionFormHeader{
+    background-color: var(--primary2);
+    padding: 15px;
+    /* border-radius: 8px; */
+
+}
+.QuestionFormBody{
+    border-radius: 8px;
+    /* background-color: rgba(233, 233, 233,0.5); */
+    height: 100%;
+}
+.QuestionHead{
+    color: var(--typo);
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.QuestionInstruction{
+    color: var(--typo);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+.QuestionInstructionDetail{
+    color: var(--background);
+    font-size: 13px;
+    font-weight: 600;
+
+}
+.TimeDate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Time{
+    font-weight: 600;
+}
+.Date{
+    font-weight: 600;
+}
+.QuestionFormBody{
+padding: 15px;
+/* background-color: violet; */
+}
+.QustionContainer{
+padding: 5px;
+font-weight: 600;
+font-size: 14px;
+color: rgb(82, 80, 80);
+text-transform: capitalize;
+}
+.radioB{
+    margin-right: 5px;
+}
+.p-field-radiobutton{
+    margin: 10px 10px 10px 0px ;
+
+}
+.more{
+    height:35px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    width: 25%;
+    background-color:var(--light1);
+    color: white;
+    font-weight: 500;
+    justify-content: center;
+    margin: 100px 10px 0px 500px;
+    border:none
+}
+.TaskContainer{
+    width: 60%;
+    border: 1px solid black;
+    padding: 30px;
+    height: 70vh;
+}
+.TaskHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+}
+.Taskheader{
+    font-size: 24px;
+    margin-bottom: 0%;
+}
+.TaskSub{
+    margin-top: 0%;
+    color: gray;
+    font-weight: 400;
+    
+}
+.TaskInstruction{
+    font-size: 13px;
+    font-weight: 600;
+    color: gray;
+    margin-bottom: 0%;
+    text-transform: uppercase;
+
+}
+.TaskInstructionDetails{
+    font-size: 14px;
+    color: gray;
+    font-style: italic;
+    margin-top: 0%;
+}
+.TaskMyWork{
+    font-size: 13px;
+    font-weight: 600;
+    color: gray;
+    margin-bottom: 0%;
+    text-transform: capitalize;
+}
+.TaskSpace{
+    margin-top: 20px;
+}
+.TaskScreenWrap{
+    /* box-sizing: border-box; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100Vh; */
+    padding: 50px;
+}
+.interviewProcessHeaderWrap{
+    display: flex;
+    justify-content: space-between;
+    /* font-size: 25px;
+    font-weight: 600;
+    margin: 0%; */
+    border-bottom: 3px solid var(--primary);
+}
+.interviewProcessHeader{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0%;
+    /* background-color: yellow; */
+}
+.interviewProcessHeaderButton{
+    width: 200px;
+    background-color: var(--light1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 3px;
+    cursor:pointer;
+    
+}
+.interviewProcessHeaderButtonDisable{
+    width: 200px;
+    /* background-color: var(--light1); */
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 3px;
+    cursor:not-allowed;
+}
+.backIcon{
+    /* background-color: violet; */
+    margin: 0%;
+    padding: 0%;
+    cursor: pointer;
+}
+.Schedule{
+    background-color:rgb(250, 165, 53);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    width: 90px;
+    text-align: center;
+}
+.Scheduled{
+    background-color:gray;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    width: 90px;
+    text-align: center;
+    cursor:not-allowed;
+}
+.Schedule:hover{
+    background-color: rgb(255, 145, 0) ;
+}
+
+.logo{
+    border-radius: 40px;
+    width: 70px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 7px -4px black;
+
+>>>>>>> 923ea65 (Complete Project)
+}
